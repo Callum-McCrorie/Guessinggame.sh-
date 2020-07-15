@@ -7,17 +7,17 @@ now=`date '+%Y-%m-%d %H:%M:%S'`
  
  
 target1: clear
-	touch Readme.md
+	touch README.md
 
 
 	
 
-	echo "Title: Guessing game" >> Readme.md
+	echo "Title: Guessing game" >> README.md
 
 
-	echo "The date and time is: $(now)" >> Readme.md
+	echo "The date and time is: $(now)" >> README.md
 
-	echo "The number of lines of code in guessinggame.sh is: `wc -l guessinggame.sh | egrep -o "[0-9]+"`"     >> Readme.md
+	echo "The number of lines of code in guessinggame.sh is: `wc -l guessinggame.sh | egrep -o "[0-9]+"`"     >> README.md
 
 clear:
-	rm -f Readme.md
+	rm -f README.md
